@@ -1,0 +1,328 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 2fr 10fr;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Roboto;
+   
+
+}
+
+header {
+    background-color: #F5F7FA;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    
+}
+
+sidebar {
+    background-color: #2196F3;
+    grid-row: 1 / 4;
+    grid-column: 1;
+    color: white;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+   
+}
+
+.another-sidebar {
+    background-color: red;
+}
+
+
+/* DOUBT SIDEBAR */
+
+.view-dashboard {
+    height: 6.25rem;
+    width: 6.25rem;
+    fill: white;
+    vertical-align: middle;
+}
+
+/* ICONS */
+
+.big-to-small-size
+,.small-to-big-size {
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+    vertical-align: middle;
+   
+}
+
+sidebar > div {
+    font-size: 2.5rem;
+}
+
+sidebar {
+    flex-direction: column;
+    display: flex;
+    padding: 1.5rem;
+    gap: 6.25rem;
+    
+}
+
+.label-dashboard {
+    font-size: 3rem;
+}
+
+
+.child2 > div,
+.child3 > div {
+    padding: 1rem;
+} 
+
+.child1,
+.child2 > div,
+.child3 > div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+/* HEADER */
+
+
+.nav-icons {
+    height: 4rem;
+    width: 4rem;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    display: grid;
+}
+
+.first-nav,
+.second-nav {
+    display: flex;
+    padding: 1.5rem;
+
+}
+
+.first-nav {
+    align-items: center;
+    gap: 40px;
+    
+}
+
+input[type="search"]
+{
+    width: 1300px;
+    padding: 5px 20px;
+    background-color: rgb(225, 218, 218);
+    border-radius: 50px;
+    height: 75px;
+    border: 1px solid rgb(225, 218, 218);
+}
+
+
+.bell-icon {
+    margin-left: auto;
+}
+
+.second-nav {
+    gap: 40px;
+    align-items: center;
+}
+button {
+    background-color: #1d77c1;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 2px solid #1d77c1;
+    font-size: 2rem;
+
+    
+}
+
+.new-button {
+    margin-left: auto;
+}
+/* FIx introduction and fix the spacing from 1st row of header to second row */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    
+}
+
+.introduction h2, h1 {
+    margin: 0;
+}
+
+
+/* CARDS */
+.card svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+main {
+    background-color: lightgrey;
+    padding: 3rem;
+    color: black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 1.5rem; 
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 20px;
+    border-left: 15px solid #f7c843;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.svgs {
+    align-self: end;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+
+.details h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Another Sidebar */
+.another-sidebar {
+    background-color: lightgrey;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.announcements,
+.trending {
+    background-color: white;
+    color: black;
+
+}
+
+.announcements p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color:#333333;;
+}
+
+.trending-icons {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.another-sidebar h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.announcements h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.announcements {
+    padding: 3rem;
+  
+}
+
+ .announce {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+} 
+
+.announcements,
+.trending {
+    border-radius: 20px;
+    margin-right: 2.5rem;
+
+}
+/* .announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+hr {
+    background-color: black;
+} */
+
+
+/* Trending */
+.trending {
+    padding: 3rem;
+}
+
+.trending-child {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trending-child-p p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+
+
+.trending-child-p p:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header,
+.card,
+.announcements,
+.trending {
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+}
