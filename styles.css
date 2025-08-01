@@ -320,9 +320,14 @@ hr {
     font-size: 1.5rem;
 }
 
-header,
+
 .card,
 .announcements,
 .trending {
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+main,
+.another-sidebar {
+    box-shadow: 0px -10px 3px rgba(0, 0, 0, 0.2);
 }
